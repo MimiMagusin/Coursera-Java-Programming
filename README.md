@@ -91,5 +91,17 @@ public class Point {                            // Declaration of the Class name
 
 ```
 * If you create data in the **heap** does not go away when a function returns destroing its frame
-
+* A **type** specifies an Interpretation + Operations
+   * Because everything is represented as **bits**, which might have different values depending on the type or the representation
+   * You can **convert** between types *implicitly* or *explicitly*.
+   * **Primitive types** are *int, double, char, boolean, float, long, byte, short*. (Can't be null or invoke methods on them).
+   * **Object types** are everything else, such as *String, Point, Shape* (Can be null and invoke methods).
+* You create a **For loop** like this:
+```Java
+for(String line : f.lines()) {
+  System.out.prinln(line);
+}
+```
+   
+   
 ## Seven Steps for Solving Programming Problems
