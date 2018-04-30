@@ -61,4 +61,35 @@ int f (int x, int y) {
 ```
 
 ## Classes Types and For Each Loops
+* Data stored in variables, and  code to manipulate it. **Object Oriented Programming** is a code paradigm of programming languages that groups the two into logical units called objects.
+* A **class** is a template that specifies how to make objects. This is how you declare it:
+```Java
+
+public class Point {                            // Declaration of the Class named Point
+   private int x;                               // Declaration of two fields: x and y
+   private int y;                               // 'Private': only code inside of this class can directly manipulate these fields
+   
+   public Point(int startx, instarty) {         // Declaration of a Constructor: 
+      x = startx;                               // Tells how to create objects of this class
+      y = starty;                               // Looks like a function with the samen name as the class, without return type
+   }                                            // 'Public': Any code can access it
+   
+   public int getX() { return x; }              // Declaration of a method
+   public int getY() { return y; )              // Methods is a function in class
+   public double distance(Point otherPt) {      // They are called on a particular object and implicitly act on that object
+      int dx = x - OtherPt.getX();              // 'OtherPt.getX()': method call
+      int dy = y - otherPt.getY();
+      return Math.sqrt(dx * dx + dy * dy);
+   }
+   
+   public static void main(String[] args) {     // Declaratio nof a static method, main
+      Point p1 = newPoint(3,4);                 // Execution starts in main, before objects are even created.
+      Point p2 = new Point(6,8);                // 'new': create data in the heap
+      System.out.println(pl.distance(p2);
+   }
+}
+
+```
+* If you create data in the **heap** does not go away when a function returns destroing its frame
+
 ## Seven Steps for Solving Programming Problems
