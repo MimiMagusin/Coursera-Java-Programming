@@ -83,7 +83,7 @@ public class Point {                            // Declaration of the Class name
    }
    
    public static void main(String[] args) {     // Declaratio nof a static method, main
-      Point p1 = newPoint(3,4);                 // Execution starts in main, before objects are even created.
+      Point p1 = new Point(3,4);                 // Execution starts in main, before objects are even created.
       Point p2 = new Point(6,8);                // 'new': create data in the heap
       System.out.println(pl.distance(p2);
    }
